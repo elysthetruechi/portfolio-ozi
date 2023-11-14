@@ -233,74 +233,81 @@ border: 6px solid rgb(218, 52, 52);
     color:rgb(112, 112, 108);
     font-family: "Playfair Display", serif;
   }
-  .my-work .title {
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    color:rgb(112, 112, 108);
-    font-family: "Playfair Display", serif;
-  }
-  .my-work .work-content {
-    /* display: grid;
-      grid-template-columns: repeat(autofit, minmax(250px, 1fr, 1fr));
-      grid-gap: 40px;
-      margin-top: 50px;*/
+  .news .news-content{
+    margin-top: 30px;
     display: flex;
-    font-family: 'Rubik', sans-serif;
-    flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
     align-items: center;
-  }
-  .my-work .work-content .grid {
+}
+.news .news-content .newz .newsbox{
+    padding-bottom:10px;
+    border: 1px solid white;
+    box-shadow: 0px 10px 8px rgba(16, 14, 14, 0.5);
+    border-radius:10px;
+}
+.news .news-content .newz .newsbox img{
+width: 280px;
+object-fit:cover;
+}
+.news .news-content .newz .newsbox l{
+font-size: 10px;
+font-family: Arial;
+margin-top: 10px;
+color: black;
+margin-left: 15px;
+}
+.news .news-content .newz{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    width:1000px;
-    row-gap: 5px;
-    height:800px;
-  }
-  .my-work .work-content .grid img{
-    border-radius: 2px ;
-    width: 100%;
-    padding:5px;
-    height: 80%;
-  }
-  .my-work .work-content .grid h3{
-    font-family: 'Playfair Display', serif;
-    width: 100%;
-  }
-  .my-work .work-content .grid p{
-    font-family: 'Rubik', sans-serif;
-    width: 100%;
-    font-size: 14px;
-  }
- .my-work .work-content a {
-    display: block;
-    margin: 50px auto;
-    text-align: center;
     position: relative;
-    top: 280px;
-    background:none;
-    color: black;
-    font-size: 20px;
-    padding: 12px 32px;
-    margin-top:1px;
-    height: 55px;
-    border-radius: 5px;
-    border: 2px solid rgb(112, 112, 108);
+    left:70px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap:none;
+    grid-auto-flow: column dense;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+      gap: 10%;
+      width:70%;
+}
+.news .news-content .newz .newsbox .title{
+    font-weight: 600;
+    font-size: 12px;
+    width: 100%;
+    font-family: Arial;
+    margin-top: 10px;
+    margin-left:15px;
+}
+.news .news-content .newz .newsbox .body{
+    font-size: 11.4px;
+    width: 100%;
+    text-align: left;
+    font-family: Arial;
+    margin-top: 10px;
+    margin-left:15px;
+}
+.news .news-content .newz .newsbox a{
+    display:block;
+    justify-content:center;
+    text-align: center;
+    margin-inline: 20px;
+    align-self: left;
+    position: relative;
+    right: 5px;
+    bottom:0px;
+    margin-top: 15px;
+    background:transparent;
+    color: red;
+    font-size: 11px;
+    padding: 5px 0;
+    border-radius: 4px;
+    height: 28px;
+    width: 85px;
+    border: 1px solid red;
     transition: all 0.3s ease;
-    font-family: 'Rubik', sans-serif;
-  }
-  .my-work .work-content a:hover{
-    background: black;
-    color: white;
-
-  }
-   
+    font-family: Arial;
+}
   /*.box {
     border: 1px solid black;
   }*/
@@ -316,9 +323,63 @@ border: 6px solid rgb(218, 52, 52);
     letter-spacing: 1.2px;
     font-family: 'Rubik', sans-serif;
   }
+  .experience .experience-content {
+    position: relative;
+    top: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Rubik', sans-serif;
+  }
+  .experience .experience-content .left {
+    width: 30%;
+    height:30%;
+    margin-left: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   
+  .experience .experience-content .left img{
+    position: absolute;
+    top: 20px;
+    left: 245px;
+    display: block;
+    width: 430px;
+    transform: translateX(-50%);
+    height:380px;
+  }
+  .experience .experience-content .right {
+    width: 48%;
+    margin-right:80px;
+    position: relative;
+    top: 40px;
+  }
+  .experience .experience-content .right .text {
+    font-size: 21px;
+    font-weight: 500;
+    text-align:left;
+    width: 100%;
+    line-height: 29px;
+    font-family:'Rubik', sans-serif;
+    color:black;
+    letter-spacing:.2px;
+  }
+  .experience .experience-content .title {
+    position: relative;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    padding-bottom:10px;
+    color:rgb(112, 112, 108);
+    font-family: "Playfair Display", serif;
+  }
   footer {
     position: relative;
-    top: 150px;
+    top: 220px;
     font-family: 'Rubik', sans-serif;
     display: block;
     text-align: center;
@@ -359,7 +420,7 @@ border: 6px solid rgb(218, 52, 52);
     text-align: justify;
     color: black;
   }
-  footer .unicon i {
+  footer .unicon a i {
     display: inline-flex;
     font-size: 20px;
     justify-content: space-between;
